@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+		<!-- Latest compiled and minified JavaScript -->
+		
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+				
+		<script src="script.js"></script>
+		
+		<style>
+			body {
+				font-family: 'Lato', sans-serif;
+				font-weight: 500;
+			}	
+			#formlogin {
+				top: 50px;	
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+		<h1 style="font-weight: 100; text-align: center;">Calculate bro</h1>
+			<div id="form" class="col-md-offset-4 col-md-4 col-xs-offset-0 col-xs-12">	
+			
+					<div class ="input-group">
+						<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-chevron-right"></span></span>
+						<input name="mlt" id="mlt1" type="number" class="form-control un" placeholder="First multiplier" aria-describedby="basic-addon1" >
+					</div>
+					<div class ="input-group">
+						<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-chevron-right"></span></span>
+						<input name="mlt" id="mlt2" type="number" class="form-control un" placeholder="Second multiplier" aria-describedby="basic-addon1" >
+					</div>
+					<div class ="input-group">
+						<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-chevron-right"></span></span>
+						<input name="amt" id="amt1" type="number" class="form-control un" placeholder="First quantity" aria-describedby="basic-addon1" >
+					</div>
+					<div class ="input-group">
+						<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-chevron-right"></span></span>
+						<input name="amt" id="amt2" type="number" class="form-control un" placeholder="Second quantity" aria-describedby="basic-addon1" >
+					</div>
+			    	<div class ="input-group">
+						<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-chevron-right"></span></span>
+						<input name="exc" id="exchange" type="number" class="form-control un" placeholder="Exchange rate" aria-describedby="basic-addon1" >
+					</div>
+					<div class="col-md-offset-4 col-md-4 col-xs-offset-4 col-xs-2" style"z-index: 10;">
+						<button type="submit" name="calc" class="btn btn-primary calc">Calculate</button>
+						<button type="submit" name="reset" class="btn btn-default reset">Reset</button>
+					</div>
+			</div>
+			<div class="col-md-offset-4 col-md-4 col-xs-offset-0 col-xs-12">
+				<div class="alert alert-danger" style="display: none; top: 60;">
+					Empty fields. Please enter all values
+				</div>
+			</div>
+			<div id="formlogin" class="col-md-offset-4 col-md-4 col-xs-offset-0 col-xs-12">	
+					<div id="totalmlt" style="text-align:center">total multiplier:</div>
+					
+					<div id="totalamt1" style="text-align:center">amount of first:</div>
+					
+					<div id="totalamt2" style="text-align:center">amount of second:</div>
+					<div id="ratio" style="text-align:center">ratio:</div>
+				</form>
+			</div>
+		</div>
+	</body>
+ </html>
